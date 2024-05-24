@@ -1,11 +1,201 @@
-<div class="container">
-  <h1 class="mt-5">Welcome to Happy Plum</h1>
-  <p class="lead">Transforming Education for the Future</p>
-  <button type="button" class="btn btn-primary">Primary Button</button>
-</div>
+<section class="header">
+    <nav>
+        <a href="index.htm">
+            <%= image_tag 'logo.png', alt: 'Logo' %>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
 
-<div class="container">
-  <h1 class="mt-5">Welcome to Happy Plum</h1>
-  <p class="lead">Transforming Education for the Future</p>
-  <button type="button" class="btn btn-primary">Primary Button</button>
-</div>
+    </nav>
+    <div class="text-box">
+        <h1>Transforming Education for the Future</h1>
+        <p>Innovative Learning Solutions for Students and Educators</p>
+        <a class="hero-btn" href="">Get Started</a>
+        <a class="hero-btn" href="">Watch Demo</a>
+    </div>
+</section>
+<!--About-->
+<section class="course">
+    <h1>About us</h1>
+    <p>
+        Brief overview of the startup's mission to revolutionize education through technology.Happy Plum Language Learning empowers preschool and K-12 students with a comprehensive all in one language curriculum, supported by gamification, Gen AI, and an APP
+        based component to reach conversational fluency in a target language and prepare them for global success. We have a superior product and leverage data-driven insights to improve student learning outcomes. We follow a Montessori approach and cater
+        to each student's personalized learning experience.
+    </p>
+</section>
+<section class="course">
+    <h1>Meet the Team</h1>
+
+    <div class="team-member">
+        <div class="image">
+            <img src="<%= asset_path('nina.jpg') %>" alt="Nina" class="team-img">
+        </div>
+        <div class="description">
+            <h3>CEO: Nina</h3>
+            <p>
+                Born in China, adopted as a toddler, and raised in Maine, Nina began learning Mandarin at age of 15, when she was awarded the National Security Language Initiative for Youth, a highly competitive cultural immersion and intensive language scholarship program
+                of the US Department of State. She continued her Mandarin studies through college, and was awarded the State Department’s Critical Language Scholarship in Suzhou, China in 2018. She graduated from Wheaton College in Norton MA with a BA
+                in International Relations with a focus on Asia. Her love for teaching Chinese began with the realization that many American children don’t learn well with the strict and rote approach of many Chinese teachers. In response, she created
+                an innovative learning approach so that children for whom Chinese is not a first language could actually have fun learning. In addition to teaching Mandarin to all ages from toddlers to adults, she has built her knowledge and teaching
+                experience through substitute teaching, private gymnastics coaching, and tutoring students of all ages in a variety of subjects, including English, statistics, and AP Biology. She’s also passionate about entrepreneurial endeavors and believes
+                that speaking both Mandarin and English is an asset in the international business realm. In her free time, Nina enjoys traveling to Asia, learning languages, and reading about business/ startups. In the past few years she has traveled
+                to Qatar, Singapore, Hong Kong, Dubai, Bali, and many major cities in China, such as Shenzhen, Xi’an, and Shanghai.
+            </p>
+            <a href="https://www.linkedin.com/in/jingximei/">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="image">
+            <img src="<%= asset_path('amber1.jpg') %>" alt="Amber" class="team-img">
+        </div>
+        <div class="description">
+            <h3>Strategy Advisor: Amber</h3>
+            <p>With more than a dozen years of experience in healthcare and AI, I'm the co-founder and CEO of basys.ai, a healthtech startup. Our focus at basys.ai is utilizing generative AI to enhance prior authorization and utilization management for healthcare
+            payers and providers. My responsibilities involve leading sales, strategy, and fundraising efforts, with a deep-seated passion for driving cost savings and better outcomes within the healthcare sector. I earned my MS in Health Data Science
+            from Harvard University, where I was recognized as a Cheng Fellow, Roslyn and Lisle Payne Scholar, and recipient of the 40 under 40 award from the Boston Congress of Public Health. During my academic journey, I've contributed to three
+            patents and authored several research papers on the intersection of AI and healthcare. My prior venture was as co-founder and CTO at kydots.ai, where I led both sales and engineering teams. We successfully delivered a SaaS product catering
+            to enterprise clients in the financial management and human capital sectors. The venture resulted in two patents and a research paper detailing our proprietary platform before getting acquired. A firm believer in community and collective
+            leadership, I'm enthusiastic about mentoring startups at TechStars, Harvard, MIT, MassChallenge, and XLerateHealth. I've also held the role of Co-Director for the Harvard Business Club, where I provided strategic support and fundraising
+            guidance to Harvard-affiliated founders. As an enthusiast of applied machine learning, I've been actively involved in both professional and academic initiatives within the Artificial Intelligence domain. One notable example is co-instructing
+            the "Collaborative Data Science in Medicine - HST.953" course at MIT. My contributions extend to top-tier machine learning conferences like NeurIPS and ACL and esteemed journals such as Lancet and Springer. Healthcare and technology are
+            personal passions of mine, and I've been fortunate to share my insights on various public platforms. Invitations to speak at TEDx, Mayo Clinic, DuPont, Udacity, and other events have allowed me to delve into these crucial topics. Additionally,
+            I've had the honor of having startups I have founded featured in Forbes and TechCrunch.</p>
+            <a href="https://www.linkedin.com/in/amber-nigam/">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!--Testimonials-->
+<section class="testimonials">
+    <h1>What Our Customers Say</h1>
+    <div class="row">
+        <div class="testimonials-col">
+            <%= image_tag 'user1.jpg', alt: 'user1' %>
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste error ab eaque et perferendis doloribus cumque, saepe nostrum voluptate qui eveniet pariatur, fuga labore. Asperiores labore consequuntur non libero?</p>
+                    <h3>School Administrator</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+        </div>
+        <div class="testimonials-col">
+            <%= image_tag 'user2.jpg', alt: 'user2' %>
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste error ab eaque et perferendis doloribus cumque, saepe nostrum voluptate qui eveniet pariatur, fuga labore. Asperiores labore consequuntur non libero?</p>
+                    <h3>Educator</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+        </div>
+        <div class="testimonials-col">
+            <%= image_tag 'user1.jpg', alt: 'user1' %>
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste error ab eaque et perferendis doloribus cumque, saepe nostrum voluptate qui eveniet pariatur, fuga labore. Asperiores labore consequuntur non libero?</p>
+                    <h3>Student</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+        </div>
+        <div class="testimonials-col">
+            <%= image_tag 'user2.jpg', alt: 'user2' %>
+                <div class="">
+                    <p>“She really enjoyed learning from you” - Parent of a 7 year old.</p>
+                    <h3>Parent</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!--Call to Action-->
+<section class="cta">
+    <h1>Contact us</h1>
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+0098 9893 5647</div>
+                    <div class="text-two">+0096 3434 5678</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">codinglab@gmail.com</div>
+                </div>
+                <div class="social-media details">
+                    <i class="fas fa-globe"></i>
+                    <div class="topic">Social Media Links</div>
+                    <a href="https://www.facebook.com/happyplummandarin" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/73955807/admin/feed/posts/" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your message">
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Send Now">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Javscript for Toggle Menu-->
+<script>
+    var navLinks=document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.righ="0";
+    }
+    function hideMenu(){
+        navLinks.style.righ="-200px";
+    }
+</script>
+
+<style>
+    
+    </style>

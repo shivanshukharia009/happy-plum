@@ -1,24 +1,27 @@
-# README
-
+# Happy-Plum
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Tabel of Content
 
-* Ruby version
+1. Ruby Version
+2. Installation
+3. Starting the server
 
-* System dependencies
+## Ruby Version
 
-* Configuration
+To run this application you need to have ruby version of 3.0.2.
 
-* Database creation
+## Installation
 
-* Database initialization
+To install all the system dependency and gems is required to start the application. Run the below command
+```http 
+bundle install
+```
 
-* How to run the test suite
+## Start the server
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To the server of the application run below command.
+```sh
+rails server
+```
